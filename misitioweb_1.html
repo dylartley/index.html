@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>El Simbolismo y la Interpretación en la Pintura Renacentista</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Hoja de portada */
+        .cover-page {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #333;
+        }
+
+        .cover-page h1 {
+            font-size: 2.1em;
+            margin-bottom: 10px;
+        }
+
+        .cover-page p {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        /* Header */
+        #main-header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+
+        /* Sección principal */
+        #main-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #main-title {
+            color: #333;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .subheading {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #main-list {
+            margin: 20px 0;
+            padding-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        #main-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #main-list li:hover {
+            color: #4CAF50;
+        }
+
+        /* Modelo de caja y posición */
+        .content-article {
+            background-color: white;
+            padding: 20px;
+            padding-bottom: 5px;
+            padding-top: 1px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Pinturas conocidas */
+        #known-paintings {
+            padding-left: 120px;
+        }
+
+        /* Bibliografía/aside */
+        #bibliography {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 75px 0;
+            border-left: 4px solid #4CAF50;
+        }
+
+        #bibliography ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Combinación y agrupación de selectores */
+        .content-article p,
+        #bibliography p {
+            color: #555;
+        }
+
+        /* Estilos de hover adicionales */
+        .content-article:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <!-- Incluyendo Bootstrap para el Navbar -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="start" class="cover-page">
+        <h1 class="title">El Simbolismo y la Interpretación en la Pintura Renacentista</h1>
+        <p class="author">Autor: Valeria Jaimes Becerra</p>
+    </div>
+
+    <header id="main-header">
+        El Renacimiento 
+        
+        <img id="cat-img" src="https://i.pinimg.com/564x/c6/22/4e/c6224ee04be4d9269a91dbf13c212061.jpg" width="150" height="150" border-radius=2 0px border=2 px>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#start">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main-list">Sección Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#known-paintings">Pinturas Conocidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bg">Bibliografía</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="main-section">
+        <h1 id="main-title"></h1>
+
+        <ol id="main-list">
+            <li onclick="document.getElementById('simbolismo-religioso').scrollIntoView();">Simbolismo Religioso</li>
+            <li onclick="document.getElementById('alegorias-clasicas').scrollIntoView();">Alegorías Clásicas</li>
+            <li onclick="document.getElementById('naturaleza-simbolismo').scrollIntoView();">Naturaleza y Simbolismo</li>
+            <li onclick="document.getElementById('retratos-poder').scrollIntoView();">Retratos y Poder</li>
+        </ol>
+
+        <article id="simbolismo-religioso" class="content-article">
+            <h2 class="subheading">Simbolismo Religioso</h2>
+            <p>Uno de los aspectos más destacados del simbolismo renacentista es el uso de iconografía religiosa. Pintores como Leonardo da Vinci y Sandro Botticelli incorporaban símbolos cristianos de manera sutil y elegante. Por ejemplo, el lirio en la
+                Anunciación representa la pureza de la Virgen María, mientras que el cordero en escenas de la Pasión simboliza a Cristo como el sacrificio redentor.</p>
+        </article>
+
+        <article id="alegorias-clasicas" class="content-article">
+            <h2 class="subheading">Alegorías Clásicas</h2>
+            <p>Los artistas del Renacimiento a menudo recurrían a la mitología y la filosofía clásica para enriquecer sus obras con capas adicionales de significado. La Venus de Botticelli no solo celebra la belleza física, sino que también representa el
+                ideal neoplatónico de la belleza espiritual y divina. Estas alegorías permitían a los espectadores educados explorar temas complejos como el amor, la virtud y la moralidad.</p>
+        </article>
+
+        <article id="naturaleza-simbolismo" class="content-article">
+            <h2 class="subheading">Naturaleza y Simbolismo</h2>
+            <p>La naturaleza desempeñó un papel crucial en la pintura renacentista, no solo como telón de fondo, sino como portadora de significados simbólicos. Los animales, plantas y paisajes se utilizaban para transmitir mensajes ocultos. Por ejemplo,
+                el uso de roble en los retratos podía simbolizar fuerza y lealtad, mientras que las mariposas eran vistas como símbolos de resurrección y esperanza.</p>
+        </article>
+
+        <article id="retratos-poder" class="content-article">
+            <h2 class="subheading">Retratos y Poder</h2>
+            <p>Los retratos renacentistas no solo eran representaciones físicas, sino también herramientas políticas y sociales. Elementos como la vestimenta, los objetos y el entorno del retratado estaban cargados de simbolismo. Un ejemplo es el retrato
+                de los Duques de Urbino por Piero della Francesca, donde la inclusión de libros y armaduras no solo refleja la erudición y el poder militar del duque, sino también su aspiración a ser visto como un gobernante ideal.</p>
+        </article>
+    </section>
+
+    <h3 class="subheading">3 Pinturas Conocidas</h3>
+    <ul id="known-paintings">
+        <li>La última cena</li>
+        <li>La Virgen de las Rocas</li>
+        <li>La Sagrada Familia o Tondo Doni</li>
+    </ul>
+
+    <aside id="bibliography">
+        <h4 class="subheading">Bibliografía:</h4>
+        <ul>
+            <li id="bg">Durán, C. A., & Imaginario, A. (2023, November 16). Renacimiento: qué es, características y obras más importantes. Cultura Genial. https://www.culturagenial.com/es/renacimiento/</li>
+            <li>arterenacentista.es. (2023, November 9). El simbolismo religioso en las obras maestras del Renacimiento: descubriendo su significado profundo|17 -. arterenacentista.es. https://arterenacentista.es/blog/renacimiento-italia/simbolismo-y-religion-en-las-obras-maestras-del-renacimiento17/</li>
+            <li>Cajal, A. (2020, February 20). Las 23 Obras del Renacimiento Más Representativas. Lifeder. https://www.lifeder.com/obras-renacimiento/</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <h4 class="subheading">Autor:</h4>
+        <p>Sara Valeria Jaimes Becerra</p>
+        <p>Correo: dylartley0922@gmail.com</p>
+        <p>Contacto: 310 8009278</p>
+    </footer>
+
+    <!-- Incluyendo scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
